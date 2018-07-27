@@ -1,6 +1,6 @@
 <template>
     <div>
-       {{ renderedHTML }}
+      <iframe class="preview" ref="preview"></iframe>
     </div>
 </template>
 
@@ -19,6 +19,21 @@ export default {
         <script>${this.jsCode}<\/script>
       `;
     }
+  },
+  watch: {
+    renderedHTML: function(val) {
+      var iframeComponent = this.$refs.preview.contentWindow.document;
+      iframeComponent.open();
+      iframeComponent.writeln(val);
+      iframeComponent.close();
+    }
   }
 };
 </script>
+
+<style scoped>
+.preview {
+  width: 100%;
+  border: none;
+}
+</style>

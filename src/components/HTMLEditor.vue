@@ -24,10 +24,12 @@ export default {
       htmlCode: `<h1>Hello world</h1>`,
       htmlOptions: {
         tabSize: 4,
-        mode: "text/html",
-        theme: "base16-dark",
+        styleActiveLine: true,
         lineNumbers: true,
-        line: true
+        autoCloseTags: true,
+        line: true,
+        mode: "text/html",
+        theme: "ambiance"
       }
     };
   },

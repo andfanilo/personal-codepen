@@ -1,6 +1,6 @@
 # personal-codepen
 
-A personal Codepen setup in Vue.
+A personal Codepen setup in Vue. Idea by [this post](https://willianjusten.com.br/criando-um-codepen-simples-em-poucas-linhas/).
 
 ## Prerequisites
 

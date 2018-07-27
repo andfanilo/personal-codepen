@@ -38,10 +38,11 @@ span {
 }`,
       cssOptions: {
         tabSize: 4,
-        mode: "text/css",
-        theme: "base16-dark",
+        styleActiveLine: true,
         lineNumbers: true,
-        line: true
+        line: true,
+        mode: "text/css",
+        theme: "paraiso-light"
       }
     };
   },

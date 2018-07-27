@@ -50,6 +50,28 @@ export default {
 </script>
 
 <style>
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#app {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
 .grid-container {
   display: grid;
   height: 100vh;
